@@ -11,7 +11,7 @@ class CashRegister
   end
   def add_item2(cost,name,number = 1)
     self.total = cost * number
-    @item << name 
+    @items << name
   end
   def apply_discount
     if discount != 0
