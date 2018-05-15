@@ -7,7 +7,10 @@ class CashRegister
   end
   def add_item(cost, name , number = 1)
     self.total = cost * number
-    @items << cost
+    @items << name
+  end
+  def add_item2(cost,name,number = 1)
+    self.total = cost * number
   end
   def apply_discount
     if discount != 0
@@ -18,7 +21,6 @@ class CashRegister
     end
   end
   def items
-    @items
   end
   def void_last_transaction
     elf.total = self.total - self.last_transaction
