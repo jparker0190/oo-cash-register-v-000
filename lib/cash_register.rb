@@ -6,7 +6,7 @@ class CashRegister
     @total = 0
   end
   def add_item(name, cost, number = 1)
-    self.total = cost * number
+    self.total += cost * number
     @items << name
 
   end
