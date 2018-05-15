@@ -8,7 +8,7 @@ class CashRegister
   def add_item(name, cost, number = 1)
     self.total += cost * number
     number.times {self.items << name}
-
+    self.last_transaction = [name, cost, number]
   end
 
   def apply_discount
