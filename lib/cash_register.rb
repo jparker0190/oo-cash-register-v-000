@@ -21,7 +21,7 @@ class CashRegister
     end
   end
   def items
-    @name
+    @items
   end
   def void_last_transaction
     elf.total = self.total - self.last_transaction
